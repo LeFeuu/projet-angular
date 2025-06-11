@@ -1,31 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
   box-sizing: border-box;
-    font-family: Roboto, sans-serif;
-  }
-
+  font-family: Roboto, sans-serif;
+}
 
 main {
   width: 100%;
   height: 130px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border: 1px solid #cccccc4f;
   display: flex;
-
 
   justify-content: space-between;
   align-items: center;
   padding-left: 100px;
 
-
-
-    .logo {
+  .logo {
     width: 203px;
     height: 64px;
     margin: 15px;
@@ -36,20 +31,17 @@ main {
     .vector {
       width: 64px;
       height: 64px;
-      background-color: #6C5DD3;
+      background-color: #6c5dd3;
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 10px;
       border: #000 solid 1px;
-
     }
 
     img {
       width: 50px;
       height: 50px;
-      color: #ccc;
-
 
     }
 
@@ -60,7 +52,6 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-
 
       h1 {
         font-size: 28px;
@@ -95,48 +86,106 @@ main {
       align-items: center;
       padding-right: 30px;
 
-      .square {
-        display: grid;
-        place-items: center;
-        grid-template-columns: 1fr 1fr;
-        margin-right: 10px;
+      .downscroll {
+        margin-left: 20px;
+        height: 60px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        .squaretwo {
-          width: 1px;
-          height: 10px;
-          background-color: #6C5DD3;
-
+        img {
+          width: 25px;
+          height: 25px;
         }
       }
-      img {
-        width: 10px;
-        height: 10px;
-        color: #ccc;
-      }
     }
 
-    .searchbar {
-      flex-grow: 1;
-      border-right: 1px solid #ccc;
-
-      input {
-        width: 100%;
-        height: 58px;
-        background-color: #f0f0f0;
-        font-size: 20px;
-      }
+    img {
+      width: 10px;
+      height: 10px;
     }
-    .iconSearch {
-      padding-left: 30px;
+  }
+
+  .searchbar {
+    flex-grow: 1;
+    border-right: 1px solid #ccc;
+
+    input {
+      width: 100%;
+      height: 58px;
+      background-color: #ffffff;
+      font-size: 20px;
+    }
+  }
+  .iconSearch {
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+    padding-top: 5px;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .logSign {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+    height: 60px;
+    margin-right: 200px;
+    gap: 20px;
+
+    .login {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-right: 5px;
-      padding-top: 5px;
+      width: 105px;
+      height: 60px;
+      border-radius: 10px;
+      background-color: #f0eeff;
 
+      button {
+        color: #6c5dd3;
+        font-size: 20px;
+        font-weight: 600;
+      }
     }
 
+    .signup {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 105px;
+      height: 60px;
+      border-radius: 10px;
+      background-color: #6c5dd3;
+      flex-grow: 1;
+      box-shadow: -3px 17px 20px 5px rgba(146, 146, 146, 0.25);
+
+      button {
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        background-color: #6c5dd3;
+      }
+    }
   }
 
+}
 
+.squaretwo {
+  width: 20px;
+  height: 10px;
+}
+
+.squarefour {
+  width: 20px;
+  height: 10px;
+  padding-bottom: 20px;
+  margin-right: 10px;
 }
